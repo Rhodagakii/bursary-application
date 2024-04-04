@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1,h2,h3,h4{
+    margin: 15px 0 ;
+  }
+  p {
+    font-size: 16px;
+  }
+  li {
+    font-size: 18px;
+  }
+  img {
+    max-width: 100%;
+  }
+  input, select, textarea {
+    border-radius: 7px;
+    border: 1px solid #aaa;
+  }
+.wrapper {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header{
+    background-color: #4e38f6;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    margin-top: 20px;
+}
+.about p {
+    width: 70%;
+    font-size: 24px;
+    /*text-align: center;*/
+}
+.info{
+    display: flex;
+    display: -webkit-flex;
+    gap: 20px;
+}
+
+.info-data{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 15px;
+}
+.row {
+    display: -webkit-flex;
+    display: flex;
+    gap: 10px;
+}
+.col {
+    padding: 10px;
+}
+.col-25{
+    width: 25%;
+}
+.col-40{
+    width: 40%;
+}
+.col-60{
+    width: 60%;
+}
+.col-75{
+    width: 75%;
+}
+.spaced {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.spaced10 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.spaced20 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.permit{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: blue;
+}
+.bigger{
+  font-size: 22px;
+}
+.message{
+  margin: 30px;
+  padding: 30px;
+  color: #085ef4;
+  font-size: 22px;
+  text-align: center;
+  border: 2px dashed #085ef4;
+  border-radius: 20px;
+}
+.blink {
+  animation: blinker 2.5s linear infinite;
+  color: #000814;
+  font-family: sans-serif;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+.intro {
+    margin: 40px;
+    align-items: center;
+}
+.intro p {
+    padding: 15px;
+}
+.intro ol {
+    margin-left: 15px;
+}
+.application-form {
+    background-color: #e5dede;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.application-form h2 {
+    background-color: #085ef4;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.form-inline {  
+    /*display: flex;*/
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input[type=text],select,textarea {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+  }
+
+  input[type=submit] {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: royalblue;
+  }
+
+.faq {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.faq p {}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-size: 16px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+.files{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  
+}
+  footer{
+    color: #ffffff;
+    background-color: #4e38f6;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+   
+
+
+@media (max-width: 700px) {
+    .info {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      gap: 0;
+    }
+    .info-data {
+        padding: 0 10px 0 10px;
+    }
+
+    .about p {
+        width: 95%;
+        font-size: 20px;
+        /*text-align: center;*/
+    }
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        gap: 0;
+      }
+    .col-25,
+    .col-40,
+    .col-60,
+    .col-75{
+        width: 100%;
+    }
+    .form-inline input[type=text],select,textarea {
+        margin: 3px 7px 3px 0;
+        padding: 7px;
+        width: 80%;
+        
+    }
+    input[type=submit] {
+        width: 200px;
+    }
+
+  }
+
+
+  @media (max-width: 400px) {
+  
+    .info-data {
+        padding: 0 7px 0 7px;
+    }
+
+    .about p {
+        font-size: 18px;
+        /*text-align: center;*/
+    }
+    .col-25,
+    .col-40,
+    .col-60,
+    .col-75{
+        width: 100%;
+    }
+    .form-inline input[type=text],select,textarea {
+        width: 100%;
+        
+      }
+  }
