@@ -25,7 +25,7 @@ PHP: Server-side scripting language used for backend development and processing 
 JavaScript: Client-side scripting language used for interactive elements and form validation.
 
 Installation
-Clone Repository: Clone this repository to your local machine using git clone https://github.com/Rhodagakii/bursary.git
+Clone Repository: Clone this repository to your local machine using git clone https://github.com/Rhodagakii/bursary-application.git
 
 Setup Database: Create a MySQL database and import the provided SQL schema file to set up the necessary tables.
 
